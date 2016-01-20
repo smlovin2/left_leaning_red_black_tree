@@ -14,8 +14,8 @@ module LeftLeaningRedBlackTree
       0
     end
 
-    def insert(val)
-      TreeNode.new(val)
+    def insert(key, payload)
+      TreeNode.new(key, payload)
     end
   end
 end

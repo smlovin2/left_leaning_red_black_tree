@@ -8,13 +8,13 @@ module LeftLeaningRedBlackTree
       @root = NullNode.new
     end
 
-    def insert(val)
-      @root = @root.insert(val)
+    def insert(key, payload)
+      @root = @root.insert(key, payload)
       @root.color = BLACK
     end
 
-    def delete(val)
-      @root = @root.delete(val)
+    def delete(key)
+      @root = @root.delete(key)
       @root.color = BLACK
     end
 
